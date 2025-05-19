@@ -39,7 +39,10 @@ const Header = () => {
         <ul className="hidden md:flex gap-6 text-gray-700 font-medium text-sm md:text-base">
           <li><a href="#hero" className="hover:text-blue-600">Welcome</a></li>
           <li><a href="#about" className="hover:text-blue-600">About</a></li>
+          <li><a href="#experience" className="hover:text-blue-600">Experience</a></li>
           <li><a href="#projects" className="hover:text-blue-600">Projects</a></li>
+          <li><a href="#research" className="hover:text-blue-600">Research & Articles</a></li>
+          <li><a href="#techStack" className="hover:text-blue-600">TechStack</a></li>
           <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
         </ul>
       </nav>
@@ -48,7 +51,10 @@ const Header = () => {
         <ul className="md:hidden px-6 pb-4 bg-white shadow-lg text-gray-700 font-medium space-y-2">
           <li><a href="#hero" onClick={handleClose} className="block py-2 hover:text-blue-600">Welcome</a></li>
           <li><a href="#about" onClick={handleClose} className="block py-2 hover:text-blue-600">About</a></li>
+          <li><a href="#experience" onClick={handleClose} className="block py-2 hover:text-blue-600">Experience</a></li>
           <li><a href="#projects" onClick={handleClose} className="block py-2 hover:text-blue-600">Projects</a></li>
+          <li><a href="#research" onClick={handleClose} className="block py-2 hover:text-blue-600">Research & Articles</a></li>
+          <li><a href="#techStack" onClick={handleClose} className="block py-2 hover:text-blue-600">TechStack</a></li>
           <li><a href="#contact" onClick={handleClose} className="block py-2 hover:text-blue-600">Contact</a></li>
         </ul>
       )}

@@ -14,10 +14,10 @@ function App() {
       <main className="pt-20">
         <section id="hero"><WelcomePage /></section>
         <section id="about"><About /></section>
-        <section id="techStack"><TechStack /></section>
         <section id="experience"><Experience /></section>
         <section id="projects"><Projects /></section>
         <section id="research"><Research /></section> 
+        <section id="techStack"><TechStack /></section>
         <section id="contact"><Contact /></section>
       </main>
     </>

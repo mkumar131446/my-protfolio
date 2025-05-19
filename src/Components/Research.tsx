@@ -37,7 +37,7 @@ const Research = () => {
               href={post.link}
               target="_blank"
               rel="noreferrer"
-              className="bg-white shadow-md p-4 rounded-lg text-left hover:shadow-lg transition"
+              className="bg-stone-50 shadow-md p-4 rounded-lg text-left hover:shadow-xl transition duration-300 ease-in-out border border-gray-200"
             >
               <h3 className="font-semibold text-lg text-blue-700 mb-2">{post.title}</h3>
               <p className="text-sm text-gray-600 mb-2">{new Date(post.pubDate).toLocaleDateString()}</p>
@@ -47,6 +47,12 @@ const Research = () => {
                   __html: post.description.slice(0, 150) + '...'
                 }}
               ></p>
+
+              {/* I will add/update this part later once I have any comments or likes in Medium.com */}
+              <div className="flex items-center justify-between text-sm text-gray-500 pt-2 border-t border-gray-100">
+                <span>👍 15</span>
+                <span>💬 3</span>
+              </div>
             </a>
           ))}
         </div>
