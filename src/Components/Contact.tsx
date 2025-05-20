@@ -2,7 +2,7 @@ import { contactLinks } from '../Data/Constants'
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-gray-50 py-16 px-6 text-center">
+    <section id="contact" className="bg-white py-16 px-6 text-center">
       <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Me</h2>
 
       <div className="flex flex-wrap justify-center gap-6 text-blue-600 text-lg">

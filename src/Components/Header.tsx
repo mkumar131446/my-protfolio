@@ -53,6 +53,7 @@ const Header = () => {
           <li><a href="#projects" className="hover:text-blue-600">Projects</a></li>
           <li><a href="#research" className="hover:text-blue-600">Research & Articles</a></li>
           <li><a href="#techStack" className="hover:text-blue-600">TechStack</a></li>
+          <li><a href="#certifications" className="hover:text-blue-600">Certifications</a></li>
           <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
         </ul>
       </nav>
@@ -65,6 +66,7 @@ const Header = () => {
           <li><a href="#projects" onClick={handleClose} className="block py-2 hover:text-blue-600">Projects</a></li>
           <li><a href="#research" onClick={handleClose} className="block py-2 hover:text-blue-600">Research & Articles</a></li>
           <li><a href="#techStack" onClick={handleClose} className="block py-2 hover:text-blue-600">TechStack</a></li>
+          <li><a href="#certifications" onClick={handleClose} className="block py-2 hover:text-blue-600">Certifications</a></li>
           <li><a href="#contact" onClick={handleClose} className="block py-2 hover:text-blue-600">Contact</a></li>
         </ul>
       )}

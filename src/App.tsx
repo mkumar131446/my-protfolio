@@ -6,6 +6,7 @@ import Contact from './Components/Contact'
 import Research from './Components/Research'
 import TechStack from './Components/TechStack'
 import Experience from './Components/Experience'
+import Certifications from './Components/Certifications'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <section id="projects"><Projects /></section>
         <section id="research"><Research /></section> 
         <section id="techStack"><TechStack /></section>
+        <section id="certifications"><Certifications /></section>
         <section id="contact"><Contact /></section>
       </main>
     </>

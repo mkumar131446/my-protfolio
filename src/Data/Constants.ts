@@ -19,6 +19,15 @@ export interface Experience {
   bullets: Array<string>
 }
 
+export interface Certifications {
+  title: string
+  issuer: string
+  issued: string
+  credentialId: string
+  image: string
+  link?: string
+}
+
 export const projects: Project[] = [
   {
     title: 'GANESH AGRO',
@@ -165,4 +174,22 @@ export const experience: Experience[] = [
       'Focused on customer engagement through clean UX and modular design.'
     ]
   }
+]
+export const certifications: Certifications[] = [
+  {
+    title: 'Microsoft Certified: Azure Fundamentals (AZ-900)',
+    issuer: 'Microsoft',
+    issued: 'August 5, 2023',
+    credentialId: '6B3FD3000F1AB2DC',
+    image: '/public/certificatesImgs/microsoft_logo.jpeg',
+    link: 'https://learn.microsoft.com/en-us/users/manishkumar-5629/credentials/6b3fd3000f1ab2dc',
+  },
+  {
+    title: 'Certified SAFe® 6 Practitioner',
+    issuer: 'Scaled Agile, Inc.',
+    issued: ' February 14, 2025',
+    credentialId: '29980381-8179',
+    image: '/public/certificatesImgs/certified-safe-6-badge.png',
+    link: 'https://www.credly.com/badges/c26bc780-915a-4d13-b82e-370eecc1da20/linked_in_profile',
+  },
 ]
