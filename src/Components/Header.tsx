@@ -1,7 +1,9 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const navigate = useNavigate()
   const handleToggle = () => setIsOpen(!isOpen)
   const handleClose = () => setIsOpen(false)
 
@@ -9,12 +11,20 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <h1 className="flex items-center gap-2 text-xl font-bold text-blue-700">
-          <img
-            src="/IMG_4655.jpeg"
-            alt="Manish Kumar"
-            className="w-8 h-8 rounded-full object-cover border border-blue-300"
-          />
-          Manish Kumar
+          <span
+            className='flex flex-nowrap gap-2 justify-items-center content-center w-full cursor-pointer'
+            onClick={() => navigate('/')}
+            onKeyDown={(e) => e.key === 'Enter' && navigate('/')}
+            role="button"
+            tabIndex={0}
+          >
+            <img
+              src="/IMG_4655.jpeg"
+              alt="Manish Kumar"
+              className="w-8 h-8 rounded-full object-cover border border-blue-300"
+            />
+            Manish Kumar
+          </span>
         </h1>
         {/* Hamburger Icon (visible on small screens) */}
         <button
@@ -37,7 +47,7 @@ const Header = () => {
         </button>
         {/* Nav links */}
         <ul className="hidden md:flex gap-6 text-gray-700 font-medium text-sm md:text-base">
-          <li><a href="#hero" className="hover:text-blue-600">Welcome</a></li>
+          <li><a href="#welcome" className="hover:text-blue-600">Welcome</a></li>
           <li><a href="#about" className="hover:text-blue-600">About</a></li>
           <li><a href="#experience" className="hover:text-blue-600">Experience</a></li>
           <li><a href="#projects" className="hover:text-blue-600">Projects</a></li>
@@ -49,7 +59,7 @@ const Header = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <ul className="md:hidden px-6 pb-4 bg-white shadow-lg text-gray-700 font-medium space-y-2">
-          <li><a href="#hero" onClick={handleClose} className="block py-2 hover:text-blue-600">Welcome</a></li>
+          <li><a href="#welcome" onClick={handleClose} className="block py-2 hover:text-blue-600">Welcome</a></li>
           <li><a href="#about" onClick={handleClose} className="block py-2 hover:text-blue-600">About</a></li>
           <li><a href="#experience" onClick={handleClose} className="block py-2 hover:text-blue-600">Experience</a></li>
           <li><a href="#projects" onClick={handleClose} className="block py-2 hover:text-blue-600">Projects</a></li>

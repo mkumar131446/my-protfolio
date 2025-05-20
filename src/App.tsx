@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       <main className="pt-20">
-        <section id="hero"><WelcomePage /></section>
+        <section id="welcome"><WelcomePage /></section>
         <section id="about"><About /></section>
         <section id="experience"><Experience /></section>
         <section id="projects"><Projects /></section>

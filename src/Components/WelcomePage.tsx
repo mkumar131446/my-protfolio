@@ -24,7 +24,7 @@ const WelcomePage = () => {
           A passionate UI Developer building responsive, accessible, and scalable frontends.
         </p>
         <a
-          href="#profile"
+          href="#projects"
           className="bg-blue-600 hover:bg-blue-700 px-6 py-3 text-white font-semibold rounded-lg transition"
         >
           View My Work

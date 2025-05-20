@@ -44,7 +44,9 @@ const Research = () => {
               <p
                 className="text-gray-700 text-sm"
                 dangerouslySetInnerHTML={{
-                  __html: post.description.slice(0, 150) + '...'
+                  __html:  post.description.length > 200
+                  ? `${post.description.slice(0, 150)}... <span href="${post.link}" class="text-blue-600 font-medium">Read more</span>`
+                  : post.description
                 }}
               ></p>
 
