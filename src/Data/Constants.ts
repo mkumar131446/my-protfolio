@@ -181,7 +181,7 @@ export const certifications: Certifications[] = [
     issuer: 'Microsoft',
     issued: 'August 5, 2023',
     credentialId: '6B3FD3000F1AB2DC',
-    image: '/public/certificatesImgs/microsoft_logo.jpeg',
+    image: '/certificatesImgs/microsoft_logo.jpeg',
     link: 'https://learn.microsoft.com/en-us/users/manishkumar-5629/credentials/6b3fd3000f1ab2dc',
   },
   {
@@ -189,7 +189,7 @@ export const certifications: Certifications[] = [
     issuer: 'Scaled Agile, Inc.',
     issued: ' February 14, 2025',
     credentialId: '29980381-8179',
-    image: '/public/certificatesImgs/certified-safe-6-badge.png',
+    image: '/certificatesImgs/certified-safe-6-badge.png',
     link: 'https://www.credly.com/badges/c26bc780-915a-4d13-b82e-370eecc1da20/linked_in_profile',
   },
 ]
