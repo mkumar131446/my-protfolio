@@ -8,6 +8,7 @@ import TechStack from './Components/TechStack'
 import Experience from './Components/Experience'
 import Certifications from './Components/Certifications'
 import BackgroundLayer from './Components/BackgroundLayer'
+import ErrorBoundary from './Components/ErrorBoundary'
 import styles from './App.module.css'
 
 function App() {
@@ -20,7 +21,11 @@ function App() {
         <section id="about"><About /></section>
         <section id="experience"><Experience /></section>
         <section id="projects"><Projects /></section>
-        <section id="research"><Research /></section>
+        <section id="research">
+          <ErrorBoundary fallback={null}>
+            <Research />
+          </ErrorBoundary>
+        </section>
         <section id="techStack"><TechStack /></section>
         <section id="certifications"><Certifications /></section>
         <section id="contact"><Contact /></section>

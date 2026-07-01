@@ -14,7 +14,7 @@ const Research = () => {
   useEffect(() => {
     fetch('/api/rss')
       .then((res) => res.json())
-      .then((data) => setPosts(data.posts))
+      .then((data) => setPosts(Array.isArray(data?.posts) ? data.posts : []))
       .catch((err) => console.error('Failed to load Medium posts', err))
   }, [])
 
@@ -42,9 +42,9 @@ const Research = () => {
               <p
                 className={styles.postDescription}
                 dangerouslySetInnerHTML={{
-                  __html: post.description.length > 200
+                  __html: (post.description ?? '').length > 200
                     ? `${post.description.slice(0, 150)}... <span class="${styles.readMore}">Read more</span>`
-                    : post.description
+                    : (post.description ?? '')
                 }}
               ></p>
 
