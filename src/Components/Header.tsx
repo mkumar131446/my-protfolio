@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router'
+import { useNavigate } from 'react-router-dom'
+import styles from './Header.module.css'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -8,11 +9,11 @@ const Header = () => {
   const handleClose = () => setIsOpen(false)
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
-      <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <h1 className="flex items-center gap-2 text-xl font-bold text-blue-700">
+    <header className={styles.header}>
+      <nav className={styles.nav}>
+        <h1 className={styles.brand}>
           <span
-            className='flex flex-nowrap gap-2 justify-items-center content-center w-full cursor-pointer'
+            className={styles.brandInner}
             onClick={() => navigate('/')}
             onKeyDown={(e) => e.key === 'Enter' && navigate('/')}
             role="button"
@@ -21,19 +22,19 @@ const Header = () => {
             <img
               src="/IMG_4655.jpeg"
               alt="Manish Kumar"
-              className="w-8 h-8 rounded-full object-cover border border-blue-300"
+              className={styles.avatar}
             />
             Manish Kumar
           </span>
         </h1>
         {/* Hamburger Icon (visible on small screens) */}
         <button
-          className="md:hidden focus:outline-none"
+          className={styles.menuToggle}
           onClick={handleToggle}
           aria-label="Toggle Menu"
         >
           <svg
-            className="w-6 h-6 text-blue-700"
+            className={styles.icon}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -46,30 +47,28 @@ const Header = () => {
           </svg>
         </button>
         {/* Nav links */}
-        <ul className="hidden md:flex gap-6 text-gray-700 font-medium text-sm md:text-base">
-          <li><a href="#welcome" className="hover:text-blue-600">Welcome</a></li>
-          <li><a href="#about" className="hover:text-blue-600">About</a></li>
-          <li><a href="#experience" className="hover:text-blue-600">Experience</a></li>
-          <li><a href="#projects" className="hover:text-blue-600">Projects</a></li>
-          <li><a href="#research" className="hover:text-blue-600">Research & Articles</a></li>
-          <li><a href="#techStack" className="hover:text-blue-600">TechStack</a></li>
-          <li><a href="#certifications" className="hover:text-blue-600">Certifications</a></li>
-          <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
+        <ul className={styles.links}>
+          <li><a href="#welcome">Welcome</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research & Articles</a></li>
+          <li><a href="#techStack">TechStack</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       {/* Mobile Menu */}
-      {isOpen && (
-        <ul className="md:hidden px-6 pb-4 bg-white shadow-lg text-gray-700 font-medium space-y-2">
-          <li><a href="#welcome" onClick={handleClose} className="block py-2 hover:text-blue-600">Welcome</a></li>
-          <li><a href="#about" onClick={handleClose} className="block py-2 hover:text-blue-600">About</a></li>
-          <li><a href="#experience" onClick={handleClose} className="block py-2 hover:text-blue-600">Experience</a></li>
-          <li><a href="#projects" onClick={handleClose} className="block py-2 hover:text-blue-600">Projects</a></li>
-          <li><a href="#research" onClick={handleClose} className="block py-2 hover:text-blue-600">Research & Articles</a></li>
-          <li><a href="#techStack" onClick={handleClose} className="block py-2 hover:text-blue-600">TechStack</a></li>
-          <li><a href="#certifications" onClick={handleClose} className="block py-2 hover:text-blue-600">Certifications</a></li>
-          <li><a href="#contact" onClick={handleClose} className="block py-2 hover:text-blue-600">Contact</a></li>
-        </ul>
-      )}
+      <ul className={`${styles.mobileMenu} ${isOpen ? styles.open : ''}`}>
+        <li><a href="#welcome" onClick={handleClose}>Welcome</a></li>
+        <li><a href="#about" onClick={handleClose}>About</a></li>
+        <li><a href="#experience" onClick={handleClose}>Experience</a></li>
+        <li><a href="#projects" onClick={handleClose}>Projects</a></li>
+        <li><a href="#research" onClick={handleClose}>Research & Articles</a></li>
+        <li><a href="#techStack" onClick={handleClose}>TechStack</a></li>
+        <li><a href="#certifications" onClick={handleClose}>Certifications</a></li>
+        <li><a href="#contact" onClick={handleClose}>Contact</a></li>
+      </ul>
     </header>
   )
 }

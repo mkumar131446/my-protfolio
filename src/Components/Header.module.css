@@ -1,0 +1,96 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(5, 7, 10, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 50;
+}
+
+.nav {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.brandInner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 1px solid var(--color-border-hover);
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 4px;
+  color: var(--color-text);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.links a:hover {
+  color: var(--color-accent);
+}
+
+.mobileMenu {
+  display: none;
+  padding: 8px 24px 16px;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.mobileMenu a {
+  display: block;
+  padding: 10px 0;
+}
+
+.mobileMenu a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .menuToggle {
+    display: block;
+  }
+  .mobileMenu.open {
+    display: block;
+  }
+}

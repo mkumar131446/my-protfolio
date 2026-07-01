@@ -30,6 +30,18 @@ export interface Certifications {
 
 export const projects: Project[] = [
   {
+    title: 'CenVexa',
+    description: 'AI-powered supply chain forecasting and enterprise planning platform, built solo as Founder & CTO. Architected multi-tenant SaaS infrastructure with role-based access control, a shared component/design system, and CI/CD-driven production deployment.',
+    image: '/images/logo.svg',
+    link: 'https://cenvexa.co',
+  },
+  {
+    title: 'MPA Analytics Platform',
+    description: 'A URL-based, desktop-responsive supply chain analytics platform built for Motorcar Parts of America, migrating an existing Streamlit prototype into a production-ready React + FastAPI architecture.',
+    image: '/images/mpa-logo.svg',
+    link: 'https://mpa-analytics-platform.vercel.app/',
+  },
+  {
     title: 'GANESH AGRO',
     description: 'A responsive website for selling agricultural commodities like food and seeds, built using Angular, SCSS, and JavaScript. Led UI development aligned with UILine design system',
     image: 'http://pic.accessify.com/thumbnails/777x423/g/ganeshagro.com.png',
@@ -110,9 +122,22 @@ export const contactLinks: ContactLink[] = [
 
 export const experience: Experience[] = [
   {
+    company: 'CenVexa',
+    role: 'Founder & CTO',
+    duration: 'Jan 2026 – Present',
+    logo: '/images/logo.svg',
+    bullets: [
+      'Building an AI-powered supply chain forecasting and enterprise planning platform from the ground up as a solo technical founder.',
+      'Architected multi-tenant SaaS infrastructure with role-based access control, tenant isolation, and scalable database design.',
+      'Own the full stack: frontend platform, backend services & APIs, authentication, cloud infrastructure, and CI/CD pipelines.',
+      'Designing a shared component library and design system for consistent UX across web and mobile products.',
+      'Shipping simultaneously across Supply Chain Infonomics (B2B forecasting) and the underlying multi-tenant SaaS infrastructure.'
+    ]
+  },
+  {
     company: 'Medline Industries',
-    role: 'UI/Web Developer',
-    duration: 'Feb 2022 – Present',
+    role: 'Developer Analyst',
+    duration: 'Jan 2022 – Jan 2026',
     logo: '/images/medline-logo.jpg',
     bullets: [
       'Leading development of Medline’s UI libraries (UiLine and React Component Library) for reusable enterprise components.',
@@ -191,5 +216,51 @@ export const certifications: Certifications[] = [
     credentialId: '29980381-8179',
     image: '/certificatesImgs/certified-safe-6-badge.png',
     link: 'https://www.credly.com/badges/c26bc780-915a-4d13-b82e-370eecc1da20/linked_in_profile',
+  },
+  {
+    title: 'Data Visualization and Dashboards with Excel and Cognos',
+    issuer: 'IBM (via Coursera)',
+    issued: 'June 29, 2026',
+    credentialId: '4EJRYROPIZQ0',
+    image: '/images/ibm-logo.jpeg',
+    link: 'https://coursera.org/verify/4EJRYROPIZQ0',
+  },
+  {
+    title: 'Improving Your Judgment for Better Decision-Making',
+    issuer: 'LinkedIn Learning',
+    issued: '',
+    credentialId: '',
+    image: '/linkedin.svg',
+  },
+  {
+    title: 'HTML Essential Training',
+    issuer: 'LinkedIn Learning',
+    issued: '',
+    credentialId: '',
+    image: '/linkedin.svg',
+  },
+  {
+    title: 'Excel Basics for Data Analysis',
+    issuer: 'IBM (via Coursera)',
+    issued: 'June 17, 2026',
+    credentialId: '33WCPDON2282',
+    image: '/images/ibm-logo.jpeg',
+    link: 'https://coursera.org/verify/33WCPDON2282',
+  },
+  {
+    title: 'Introduction to Data Analytics',
+    issuer: 'IBM (via Coursera)',
+    issued: 'June 11, 2026',
+    credentialId: 'CMNOCP6M10W7',
+    image: '/images/ibm-logo.jpeg',
+    link: 'https://coursera.org/verify/CMNOCP6M10W7',
+  },
+  {
+    title: 'Assessment for Data Analysis and Visualization Foundations',
+    issuer: 'IBM (via Coursera)',
+    issued: 'June 29, 2026',
+    credentialId: 'Y8L1HGYCCSTI',
+    image: '/images/ibm-logo.jpeg',
+    link: 'https://coursera.org/verify/Y8L1HGYCCSTI',
   },
 ]

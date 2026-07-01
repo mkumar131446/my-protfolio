@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+  <!-- Double circle design with V -->
+  <g>
+    <!-- Outer circle -->
+    <circle cx="30" cy="30" r="22" fill="none" stroke="#1e3a5f" stroke-width="3" />
+    <!-- Inner circle -->
+    <circle cx="30" cy="30" r="18" fill="#1e3a5f" />
+    <!-- White V inside -->
+    <path 
+      d="M20 20 L30 40 L40 20" 
+      stroke="white" 
+      stroke-width="3" 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+      fill="none" 
+    />
+  </g>
+</svg>

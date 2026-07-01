@@ -1,0 +1,39 @@
+.layer {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: var(--color-bg);
+  pointer-events: none;
+}
+
+.glow {
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  filter: blur(90px);
+}
+
+.glowTop {
+  top: -8rem;
+  left: -8rem;
+  background: rgba(56, 189, 248, 0.16);
+}
+
+.glowBottom {
+  bottom: -6rem;
+  right: -6rem;
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
+  mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
+}

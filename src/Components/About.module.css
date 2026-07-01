@@ -1,0 +1,19 @@
+.section {
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 24px;
+}
+
+.body {
+  max-width: 42rem;
+  margin: 0 auto;
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}

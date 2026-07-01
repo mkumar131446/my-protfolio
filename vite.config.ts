@@ -5,4 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: './',
   plugins: [react()],
+  build: {
+    // Local macOS Finder keeps recreating dist/.DS_Store, which some sandboxed
+    // environments refuse to unlink — that made vite's default dist-cleaning
+    // step fail. Skipping the auto-clean avoids that; dist/ is gitignored anyway.
+    emptyOutDir: false,
+  },
 })

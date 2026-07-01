@@ -1,23 +1,24 @@
 import { contactLinks } from '../Data/Constants'
+import styles from './Contact.module.css'
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-white py-16 px-6 text-center">
-      <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Me</h2>
+    <section id="contact" className={styles.section}>
+      <h2 className={styles.heading}>Contact Me</h2>
 
-      <div className="flex flex-wrap justify-center gap-6 text-blue-600 text-lg">
+      <div className={styles.links}>
         {contactLinks.map((link, i) => (
           <a
             key={i}
             href={link.href}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 hover:underline"
+            className={styles.link}
           >
             <img
               src={link.icon}
               alt={link.label}
-              className="w-6 h-6 rounded-full object-cover border border-blue-300"
+              className={styles.icon}
             />
             {link.label}
           </a>

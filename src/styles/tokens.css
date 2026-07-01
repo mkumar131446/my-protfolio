@@ -1,0 +1,44 @@
+/*
+  Design tokens — shared CSS custom properties.
+  Single dark palette, single accent color, no gradients.
+*/
+:root {
+  /* backgrounds */
+  --color-bg: #05070a;
+  --color-bg-alt: #090c11;
+  --color-bg-elevated: #0c1017;
+  --color-surface: rgba(255, 255, 255, 0.03);
+  --color-surface-hover: rgba(255, 255, 255, 0.05);
+
+  /* borders */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(56, 189, 248, 0.4);
+
+  /* text */
+  --color-text: #e5eaf1;
+  --color-text-secondary: #93a1b5;
+  --color-text-muted: #5c6a80;
+
+  /* single accent (no gradient) */
+  --color-accent: #38bdf8;
+  --color-accent-strong: #0ea5e9;
+  --color-accent-strong-hover: #0284c7;
+  --color-accent-soft: rgba(56, 189, 248, 0.1);
+
+  /* effects */
+  --shadow-glow: 0 0 30px -12px rgba(56, 189, 248, 0.35);
+
+  /* type */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+
+  /* shape */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* layout */
+  --container-max: 1120px;
+  --transition-base: 0.25s ease;
+}

@@ -7,17 +7,20 @@ import Research from './Components/Research'
 import TechStack from './Components/TechStack'
 import Experience from './Components/Experience'
 import Certifications from './Components/Certifications'
+import BackgroundLayer from './Components/BackgroundLayer'
+import styles from './App.module.css'
 
 function App() {
   return (
     <>
+      <BackgroundLayer />
       <Header />
-      <main className="pt-20">
+      <main className={styles.main}>
         <section id="welcome"><WelcomePage /></section>
         <section id="about"><About /></section>
         <section id="experience"><Experience /></section>
         <section id="projects"><Projects /></section>
-        <section id="research"><Research /></section> 
+        <section id="research"><Research /></section>
         <section id="techStack"><TechStack /></section>
         <section id="certifications"><Certifications /></section>
         <section id="contact"><Contact /></section>

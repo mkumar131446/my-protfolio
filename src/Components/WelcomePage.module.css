@@ -1,0 +1,104 @@
+.section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.card {
+  position: relative;
+  background: var(--color-surface);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-glow);
+  padding: 32px;
+  max-width: 640px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 48px;
+  }
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-text);
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3.75rem;
+  }
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.tagline {
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  margin-bottom: 24px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: var(--radius-md);
+  background: var(--color-accent-strong);
+  color: #fff;
+  font-weight: 600;
+  transition: background var(--transition-base);
+}
+
+.cta:hover {
+  background: var(--color-accent-strong-hover);
+}
