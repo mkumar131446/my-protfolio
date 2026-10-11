@@ -13,7 +13,7 @@ export interface ContactLink {
 
 export interface Experience {
   company: string
-  role: string
+  role?: string
   duration: string
   logo: string
   bullets: Array<string>
@@ -28,10 +28,61 @@ export interface Certifications {
   link?: string
 }
 
+export interface Publication {
+  title: string
+  journal: string
+  date: string // ISO yyyy-mm-dd
+  type: string
+  contributions: Array<string>
+  contributors: Array<string>
+  doi?: string
+  link?: string
+}
+
+// Set to your ORCID iD (e.g. '0000-0000-0000-0000') to show the "View on ORCID" button
+export const ORCID_ID = '0009-0003-0575-8072'
+
+export const publications: Publication[] = [
+  {
+    title: 'The Economic Impact of Web Performance Budgets: A Data-Driven Approach to Conversion Optimization',
+    journal: 'Hampton Global Business Review',
+    date: '2025-07-30',
+    type: 'Journal article',
+    contributions: ['Conceptualization', 'Methodology', 'Writing - original draft', 'Writing - review & editing'],
+    contributors: ['Manish Kumar'],
+  },
+  {
+    title: 'Developer Productivity and Project Cost Savings through Component Reusability',
+    journal: 'Global Journal of Engineering and Basic Sciences (GBEJ)',
+    date: '2025-07-04',
+    type: 'Journal article',
+    contributions: ['Conceptualization', 'Methodology', 'Writing - original draft', 'Writing - review & editing'],
+    contributors: ['Manish Kumar'],
+  },
+  {
+    title: 'Designing Resilient Front End Architectures for Real-Time Web Application',
+    journal: 'International Journal of Engineering Technology Research & Management (IJETRM)',
+    date: '2024-08-30',
+    type: 'Journal article',
+    contributions: ['Conceptualization', 'Methodology', 'Writing - original draft', 'Writing - review & editing'],
+    contributors: ['Manish Kumar'],
+    doi: '10.5281/zenodo.15486443',
+  },
+  {
+    title: 'Bridging the Gap: Integrating AI Assisted Code Suggestions in Your UI Workflow',
+    journal: 'International Journal of Engineering Technology Research & Management (IJETRM)',
+    date: '2023-09-11',
+    type: 'Journal article',
+    contributions: ['Writing - original draft', 'Conceptualization', 'Methodology', 'Writing - review & editing'],
+    contributors: ['Manish Kumar'],
+    doi: '10.5281/zenodo.15321149',
+  },
+]
+
 export const projects: Project[] = [
   {
     title: 'CenVexa',
-    description: 'AI-powered supply chain forecasting and enterprise planning platform, built solo as Founder & CTO. Architected multi-tenant SaaS infrastructure with role-based access control, a shared component/design system, and CI/CD-driven production deployment.',
+    description: 'AI-powered supply chain forecasting and enterprise planning platform, built end to end. Architected multi-tenant SaaS infrastructure with role-based access control, a shared component/design system, and CI/CD-driven production deployment.',
     image: '/images/logo.svg',
     link: 'https://cenvexa.co',
   },
@@ -123,11 +174,10 @@ export const contactLinks: ContactLink[] = [
 export const experience: Experience[] = [
   {
     company: 'CenVexa',
-    role: 'Founder & CTO',
     duration: 'Jan 2026 – Present',
     logo: '/images/logo.svg',
     bullets: [
-      'Building an AI-powered supply chain forecasting and enterprise planning platform from the ground up as a solo technical founder.',
+      'Building an AI-powered supply chain forecasting and enterprise planning platform from the ground up as the sole engineer.',
       'Architected multi-tenant SaaS infrastructure with role-based access control, tenant isolation, and scalable database design.',
       'Own the full stack: frontend platform, backend services & APIs, authentication, cloud infrastructure, and CI/CD pipelines.',
       'Designing a shared component library and design system for consistent UX across web and mobile products.',

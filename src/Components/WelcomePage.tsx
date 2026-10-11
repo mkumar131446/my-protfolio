@@ -10,7 +10,7 @@ const WelcomePage = () => {
         transition={{ duration: 0.6 }}
         className={styles.card}
       >
-        <p className={styles.eyebrow}>Founder & CTO @ CenVexa</p>
+        <p className={styles.eyebrow}>Open to new opportunities</p>
         <h1 className={styles.heading}>
           Hi, I'm Manish <span className={styles.wave}>👋</span>
         </h1>

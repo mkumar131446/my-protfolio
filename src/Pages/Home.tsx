@@ -37,7 +37,7 @@ const Home = () => {
       <div className={styles.overlay} />
 
       <div className={styles.content}>
-        <p className={styles.eyebrow}>Founder & CTO @ CenVexa</p>
+        <p className={styles.eyebrow}>Open to new opportunities</p>
         <h1 className={styles.name}>Manish Kumar</h1>
         <h2 className={styles.subtitle}>
           Frontend Platform Architect · Full Stack Developer
@@ -48,7 +48,7 @@ const Home = () => {
             Welcome To My Profile
           </button>
           <a
-            href="/resume/Manish_Rsm.pdf"
+            href="/resume/Manish_Kumar_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.secondaryBtn}

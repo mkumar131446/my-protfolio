@@ -12,7 +12,7 @@ const Experience = () => {
               <img src={item.logo} alt={item.company} className={styles.logo} />
               <h3 className={styles.company}>{item.company}</h3>
             </div>
-            <p className={styles.meta}>{item.role} · {item.duration}</p>
+            <p className={styles.meta}>{item.role ? `${item.role} · ${item.duration}` : item.duration}</p>
             <ul className={styles.bullets}>
               {item.bullets.map((point, j) => (
                 <li key={j}>{point}</li>
