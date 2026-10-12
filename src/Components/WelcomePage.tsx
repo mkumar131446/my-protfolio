@@ -15,8 +15,8 @@ const WelcomePage = () => {
           Hi, I'm Manish <span className={styles.wave}>👋</span>
         </h1>
         <p className={styles.tagline}>
-          Frontend Platform Architect building scalable, accessible frontend systems
-          and AI-powered SaaS products.
+          Senior UI Developer building scalable, accessible web applications with
+          React, TypeScript, and modern full-stack tooling.
         </p>
         <div className={styles.tags}>
           {['React', 'TypeScript', 'System Architecture', 'AI-Powered SaaS'].map((tag) => (

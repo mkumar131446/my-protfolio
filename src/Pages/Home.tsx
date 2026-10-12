@@ -40,7 +40,7 @@ const Home = () => {
         <p className={styles.eyebrow}>Open to new opportunities</p>
         <h1 className={styles.name}>Manish Kumar</h1>
         <h2 className={styles.subtitle}>
-          Frontend Platform Architect · Full Stack Developer
+          Senior UI Developer · Full Stack Developer
         </h2>
 
         <div className={styles.actions}>

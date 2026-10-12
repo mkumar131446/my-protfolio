@@ -5,7 +5,7 @@ const About = () => {
     <section className={styles.section}>
       <h2 className={styles.heading}>About Me</h2>
       <p className={styles.body}>
-        I'm a Frontend Platform Architect with 6+ years building enterprise UI systems
+        I'm a Senior UI Developer with 6+ years building enterprise UI systems
         (Medline, Bank of America, Dun & Bradstreet), currently building CenVexa, an
         AI-powered supply chain forecasting platform, from the ground up.
         I'm a published researcher in scalable frontend architectures and component
