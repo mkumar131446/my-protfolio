@@ -90,7 +90,7 @@ export const projects: Project[] = [
     title: 'MPA Analytics Platform',
     description: 'A URL-based, desktop-responsive supply chain analytics platform built for Motorcar Parts of America, migrating an existing Streamlit prototype into a production-ready React + FastAPI architecture.',
     image: '/images/mpa-logo.svg',
-    link: 'https://mpa-analytics-platform.vercel.app/',
+    link: 'https://mpa-analytics-web.onrender.com/',
   },
   {
     title: 'GANESH AGRO',
