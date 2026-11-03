@@ -19,9 +19,16 @@ const Research = () => {
 
   useEffect(() => {
     fetch('/api/rss')
-      .then((res) => res.json())
+      .then((res) => {
+        // /api/rss only exists on Vercel (or `vercel dev`). Under plain `vite dev`
+        // the dev server answers with source code / HTML instead of JSON.
+        if (!res.ok || !res.headers.get('content-type')?.includes('application/json')) {
+          throw new Error('Medium API unavailable')
+        }
+        return res.json()
+      })
       .then((data) => setPosts(Array.isArray(data?.posts) ? data.posts : []))
-      .catch((err) => console.error('Failed to load Medium posts', err))
+      .catch((err) => console.warn('Medium posts not loaded:', err.message))
   }, [])
 
   const sortedPublications = [...publications].sort((a, b) => b.date.localeCompare(a.date))

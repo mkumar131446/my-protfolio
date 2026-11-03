@@ -54,6 +54,7 @@ const Header = () => {
           <li><a href="#projects">Projects</a></li>
           <li><a href="#research">Research & Articles</a></li>
           <li><a href="#techStack">TechStack</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -66,6 +67,7 @@ const Header = () => {
         <li><a href="#projects" onClick={handleClose}>Projects</a></li>
         <li><a href="#research" onClick={handleClose}>Research & Articles</a></li>
         <li><a href="#techStack" onClick={handleClose}>TechStack</a></li>
+        <li><a href="#education" onClick={handleClose}>Education</a></li>
         <li><a href="#certifications" onClick={handleClose}>Certifications</a></li>
         <li><a href="#contact" onClick={handleClose}>Contact</a></li>
       </ul>

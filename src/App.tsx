@@ -6,6 +6,7 @@ import Contact from './Components/Contact'
 import Research from './Components/Research'
 import TechStack from './Components/TechStack'
 import Experience from './Components/Experience'
+import Education from './Components/Education'
 import Certifications from './Components/Certifications'
 import BackgroundLayer from './Components/BackgroundLayer'
 import ErrorBoundary from './Components/ErrorBoundary'
@@ -27,6 +28,7 @@ function App() {
           </ErrorBoundary>
         </section>
         <section id="techStack"><TechStack /></section>
+        <section id="education"><Education /></section>
         <section id="certifications"><Certifications /></section>
         <section id="contact"><Contact /></section>
       </main>

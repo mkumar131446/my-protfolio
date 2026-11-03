@@ -11,7 +11,7 @@
 }
 
 .grid {
-  max-width: 72rem;
+  max-width: 64rem;
   margin: 0 auto;
   display: grid;
   gap: 32px;

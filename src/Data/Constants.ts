@@ -28,6 +28,14 @@ export interface Certifications {
   link?: string
 }
 
+export interface Education {
+  institution: string
+  degree: string
+  duration: string
+  location?: string
+  logo: string
+}
+
 export interface Publication {
   title: string
   journal: string
@@ -250,6 +258,23 @@ export const experience: Experience[] = [
     ]
   }
 ]
+export const education: Education[] = [
+  {
+    institution: 'Trine University',
+    degree: 'Doctor of Information Technology (DIT)',
+    duration: 'June 2026 – Present',
+    location: 'Detroit, USA',
+    logo: '/images/Trine_University_Angola_logo.jpg',
+  },
+  {
+    institution: 'Wilmington University',
+    degree: 'Master of Science, Information Systems Technologies',
+    duration: 'Jan 2016 – Dec 2018',
+    location: 'Delaware, USA',
+    logo: '/images/WilmU-logo.png',
+  },
+]
+
 export const certifications: Certifications[] = [
   {
     title: 'Microsoft Certified: Azure Fundamentals (AZ-900)',
